@@ -1,2 +1,9 @@
 markdown: kramdown
-exclude: [vendor]
+exclude:
+  - create-thumbnails.bat
+  - README.md
+  - vendor
+
+title: 'Kramlíci'
+# encode: http://wbwip.com/wbw/emailencoder.html
+email: "&#119;&#119;&#119;&#064;&#107;&#114;&#097;&#109;&#111;&#108;&#105;&#115;&#046;&#099;&#122;"

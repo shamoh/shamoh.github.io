@@ -1,8 +1,26 @@
 ---
 layout: default
-title: Home Sweet Home
+title: Projects
 ---
 
-<div>
-	<h1>Hello World!</h1>
+<div class="album text-muted">
+	<div class="container">
+		<div class="row">
+
+			{% for project in site.data.projects %}
+				<div class="card">
+					<div class="card-header">
+						<a href="{{ project.url }}" class="card-link">{{ project.title }}</a>
+				  </div>
+					<a href="{{ project.url }}">
+				  	<img class="card-img-top" src="{{ project.img }}" alt="{{ project.img-alt }}">
+					</a>
+				  <div class="card-body">
+				    <p class="card-text">{{ project.desc }}</p>
+				  </div>
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
 </div>
